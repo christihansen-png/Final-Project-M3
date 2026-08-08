@@ -35,14 +35,7 @@ NAV
 }
 
 .nav__link--primary {
-text-decoration: none;
-background-color: #7342d6;
-color: white;
-padding: 8px 24px;
-display: flex;
-align-items: center;
-border-radius: 10px;
-padding: 0 24px;
+  text-decoration: none;
 }
 
 .row {
@@ -101,4 +94,49 @@ gap: 40px;
 
 .header__img {
   width: 60%;
+}
+
+.purple {
+  color:#7342d6;
+}
+
+h1 {
+ font-size: 48px;
+font-weight: bold;
+margin-bottom: 38px;
+}
+
+.header__description--text {
+  color: rgb(37, 37, 128);
+}
+
+.email {
+  color: lightgray;
+  border: none;
+}
+
+.btn {
+text-decoration: none;
+background-color: #7342d6;
+color: white;
+display: flex;
+align-items: center;
+border-radius: 16px;
+padding: 8px 24px;
+cursor: pointer;
+}
+
+.header__form {
+  display: flex;
+  gap: 12px;
+}
+
+.trusted__logos {
+  display: flex;
+  gap: 16px;
+}
+
+.trusted__logos img {
+  max-width: 280px;
+  height: auto;
 }
