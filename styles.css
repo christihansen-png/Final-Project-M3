@@ -79,3 +79,26 @@ ul {
 li {
   list-style-type: none;
 }
+
+/* 
+
+HEADER
+
+*/
+
+.header__container {
+  display: flex;
+align-items: center;
+gap: 40px;
+}
+
+.header__content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header__img {
+  width: 60%;
+}
