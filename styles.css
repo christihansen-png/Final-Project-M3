@@ -237,3 +237,51 @@ DESIGN
   width: 100%;
   height: auto; 
 }
+
+/*
+
+GET STARTED
+
+*/
+
+.started__container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 48px;
+}
+
+.started__img {
+width: 50%;
+}
+
+.started__img img {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.started__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.started__tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.started__tab {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.started__number {
+  font-size: 40px;
+  color: lightgray;
+  padding-right: 8px;
+}
