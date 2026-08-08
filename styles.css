@@ -285,3 +285,40 @@ width: 50%;
   color: lightgray;
   padding-right: 8px;
 }
+
+/*
+
+VALUES
+
+*/
+
+.values__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.value__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.values__img {
+  width: 50%;
+}
+
+.values__img img {
+  width: 100%;
+  height: auto;
+}
+
+
+/*
+
+PLANS
+
+*/
+
