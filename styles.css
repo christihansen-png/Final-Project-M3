@@ -515,3 +515,63 @@ TESTIMONIALS
   width: 100%;
   height: auto;
 }
+
+/*
+
+DEVELOPERS
+
+*/
+
+.developers__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #7342d6;
+}
+
+.developers__content {
+  width: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  align-items: center;
+  padding-top: 48px;
+}
+
+.developers__btn {
+  display: flex;
+  gap: 24px;
+}
+
+.started__btn {
+text-decoration: none;
+background-color: #f47474;
+color: white;
+display: flex;
+align-items: center;
+border-radius: 16px;
+padding: 8px 24px;
+cursor: pointer;
+}
+
+.contact__btn {
+text-decoration: none;
+background-color: #7342d6;
+color: white;
+display: flex;
+align-items: center;
+border-radius: 16px;
+padding: 8px 24px;
+cursor: pointer;
+}
+
+.contact__btn:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+.started__btn:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
