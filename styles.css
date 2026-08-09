@@ -317,6 +317,11 @@ VALUES
   gap: 24px;
 }
 
+.icons {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .values__img {
   width: 50%;
@@ -347,6 +352,8 @@ VALUES
   align-items: center;
   justify-content: center;
 }
+
+.value__items
 
 
 /*
