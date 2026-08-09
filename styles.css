@@ -83,6 +83,12 @@ ul {
   align-items: center;
 }
 
+.pricing__mid ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 li {
   list-style-type: none;
 }
@@ -414,6 +420,13 @@ ul {
   border-top: 8px solid #616dba;
   border-radius: 8px;
   padding: 24px;
+  background-color: #616dba;
+  color: white;
+}
+
+.business {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .pricing__card--personal {
