@@ -527,6 +527,7 @@ DEVELOPERS
   align-items: center;
   justify-content: space-between;
   width: 80%;
+  max-width: 1050px;
   background-color: #7342d6;
   border-radius: 8px;
   margin-bottom: 80px;
