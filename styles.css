@@ -51,6 +51,10 @@ NAV
   text-decoration: none;
 }
 
+.nav__toggle {
+  display: none;
+}
+
 .row {
   width: 100%;
   max-width: 1200px;
@@ -110,15 +114,16 @@ HEADER
 }
 
 .header__content {
-  width: 40%;
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 24px;
 }
 
 .header__img {
-  width: 60%;
   display: flex;
+  flex: 1.5;
+  min-width: 0;
   justify-content: center;
 }
 
@@ -317,9 +322,10 @@ VALUES
   gap: 24px;
 }
 
-.icons {
+.values__list {
   display: flex;
   flex-direction: column;
+  gap: 24px;
 }
 
 
@@ -353,7 +359,11 @@ VALUES
   justify-content: center;
 }
 
-.value__items
+.value__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
 
 /*
@@ -387,7 +397,7 @@ padding-right: 80px;
 .pricing__cards {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   text-align: left;
   border-radius: 16px;
   gap: 24px;
@@ -525,29 +535,67 @@ TESTIMONIALS
 }
 
 .test__content {
-  width: 30%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.test__header {
-  font-size: 24px;
-}
-
-.test {
-  font-size: 10px;
-  gap: 8px;
-  line-height: 1.8;
-}
-
 .test__img {
-  width: 70%;
+  flex: 2;
 }
 
 .test__img img {
   width: 100%;
   height: auto;
+}
+
+.testimonial__card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.testimonial__stars {
+  color: #f5b301;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.testimonial__person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial__name {
+  font-weight: 500;
+}
+
+.testimonial__title {
+  font-size: 13px;
+  color: gray;
+}
+
+.testimonial__nav {
+  display: flex;
+  gap: 12px;
+}
+
+.testimonial__arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  background: white;
+  cursor: pointer;
 }
 
 /*
@@ -641,15 +689,23 @@ justify-content: space-evenly;
 .footer__content {
   display: flex;
   flex-direction: column;
-  font-size: 8px;
-  line-height: 2;
+  font-size: 15px;
+  line-height: 2.5;
 }
 
+.footer {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: #7342d6;
+}
 hr {
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 0;
-  background-color: #7342d6;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 24px 0;
 }
 
 .break {
@@ -659,6 +715,18 @@ hr {
   
 }
 
+.logo__icon--footer {
+  background-color: white;
+  color: #7342d6;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 32px;
+}
 .footer__logo {
   display: flex;
   flex-direction: row;
@@ -671,17 +739,87 @@ hr {
   color: white;
 }
 
-.logo__icon--footer {
-  background-color: white;
-  color: black;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 4px;
-  font-weight: bold;
-  
+.footer__brand h3 {
+  font-size: 22px;
+  font-weight: 700;
 }
 
+.logo__icon--footer {
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  grid-area: 12px;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .pricing__cards {
+    flex-direction: column;
+  }
+
+  .testimonial__container {
+    flex-direction: column;
+  }
+
+  .values__container {
+    flex-direction: column;
+  }
+
+  .value__content {
+    width: 100%;
+  }
+
+  .values__img {
+    width: 100%;
+  }
+
+  .service__card {
+    width: 100%;
+  }
+
+  .nav__toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav__links--open {
+    display: flex;
+  }
+
+  .header__container {
+    flex-direction: column;
+  }
+
+  .design__container {
+    flex-direction: column;
+  }
+
+  .started__container {
+    flex-direction: column;
+  }
+
+  .developers__container {
+    flex-direction: column;
+    padding: 24px;
+  }
+}
