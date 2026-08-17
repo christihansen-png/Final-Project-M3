@@ -51,6 +51,13 @@ NAV
   text-decoration: none;
 }
 
+.nav__links-main,
+.nav__links-next {
+  gap: 24px;
+  display: flex;
+  align-items: center;
+}
+
 .nav__toggle {
   display: none;
 }
@@ -324,7 +331,7 @@ VALUES
 
 .values__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 24px;
 }
 
@@ -363,6 +370,12 @@ VALUES
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.value__items {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
 }
 
 
@@ -758,9 +771,28 @@ hr {
   grid-area: 12px;
 }
 
+.icons svg {
+  background: white;
+  color: #1e293b;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
 .footer__brand {
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 1024px) {
+  .pricing__cards {
+    flex-direction: column;
+  }
+
+  .row {
+    padding: 0 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -772,11 +804,11 @@ hr {
     flex-direction: column;
   }
 
-  .values__container {
+   .values__container {
     flex-direction: column;
   }
 
-  .value__content {
+   .value__content {
     width: 100%;
   }
 
@@ -785,10 +817,19 @@ hr {
   }
 
   .service__card {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  .nav__toggle {
+.header__container {
+  flex-direction: column;
+}
+
+.services__container {
+  flex-direction: column;
+  align-items: center;
+}
+
+ .nav__toggle {
     display: block;
     background: none;
     border: none;
@@ -806,20 +847,22 @@ hr {
     display: flex;
   }
 
-  .header__container {
-    flex-direction: column;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 26px;
   }
 
-  .design__container {
-    flex-direction: column;
+  h2 {
+    font-size: 32px;
   }
 
-  .started__container {
-    flex-direction: column;
+  .row {
+    padding: 0 16px;
   }
 
-  .developers__container {
+  .values__list {
     flex-direction: column;
-    padding: 24px;
   }
 }
