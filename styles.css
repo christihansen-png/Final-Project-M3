@@ -249,7 +249,6 @@ DESIGN
   display: flex;
   flex-direction: column;
   gap: 24px;
-  font-display: block;
 }
 
 .design__img {
@@ -796,7 +795,17 @@ hr {
 }
 
 @media (max-width: 768px) {
-  .pricing__cards {
+ 
+  .design__container {
+    flex-direction: column;
+  }
+
+  .design__content,
+  .design__img {
+    width: 100%;
+  }
+
+  .started__container {
     flex-direction: column;
   }
 
@@ -845,6 +854,17 @@ hr {
 
   .nav__links--open {
     display: flex;
+  }
+
+  .developers__btn {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    flex-direction: column;
+    height: auto;
+    gap: 24px 0;
+    padding: 24px 0 48px;
   }
 
 }
