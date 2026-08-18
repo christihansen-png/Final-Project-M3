@@ -816,6 +816,10 @@ hr {
 }
 
 @media (max-width: 768px) {
+
+  h1, h2, h3, span, li {
+    font-size: 20px;
+  }
  
   .design__container {
     flex-direction: column;
@@ -894,16 +898,22 @@ hr {
   footer {
     display: flex;
     flex-wrap: wrap;
-  font-size: 100%;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
+    font-size: 100%;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
 }
 
 .footer__content {
   display: flex;
   flex-direction: column;
-  font-size:smaller;
-  line-height: 1.5;
+  justify-content: center;
+  min-width: 200px;
+  line-height: 2.5;
+  gap: 16px;
+}
+
+.footer__content p{
+  font-size: 16px;
 }
 
 }
