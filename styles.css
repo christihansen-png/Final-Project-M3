@@ -240,9 +240,6 @@ FEATURES
 
 */
 
-.services__container {
-  display: flex;
-}
 
 .feature__title {
 display: flex;
